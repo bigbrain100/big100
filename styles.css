@@ -1,0 +1,154 @@
+/* 全域樣式 */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #4a90e2;
+    color: white;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+header p {
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+/* 選擇洞察重點 */
+#insight-selection {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 800px;
+}
+
+#insight-selection h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #4a90e2;
+}
+
+#insight-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+#insight-list button {
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid #4a90e2;
+    border-radius: 5px;
+    background-color: #f0f8ff;
+    color: #4a90e2;
+    transition: all 0.3s ease;
+    width: 200px;
+    max-width: 100%;
+    text-align: center;
+}
+
+#insight-list button:hover {
+    background-color: #4a90e2;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* 心理驅力與策略建議 */
+#psychological-driver, #strategy-suggestion {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 800px;
+}
+
+#psychological-driver p, #strategy-suggestion p, #strategy-suggestion h3 {
+    font-size: 18px;
+    color: #333;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #4a90e2;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #357ABD;
+}
+
+#reset-btn {
+    background-color: #e57373;
+}
+
+#reset-btn:hover {
+    background-color: #d32f2f;
+}
+
+/* 聯絡方式 */
+footer {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px;
+}
+
+footer a {
+    color: #4a90e2;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* 手機響應式設計 */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+    #insight-selection h2, #psychological-driver p, #strategy-suggestion p, #strategy-suggestion h3 {
+        font-size: 16px;
+    }
+
+    #insight-list button {
+        width: 100%; /* 在手機上按鈕全寬 */
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+}

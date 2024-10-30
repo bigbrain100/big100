@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>李明憲教授大腦巧推與行為改變洞察策略工具</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>李明憲教授大腦巧推與行為改變洞察策略工具</h1>
+        <p>請選擇您認為最主要的洞察重點，系統將依此顯示對應的心理驅力和策略建議。</p>
+    </header>
+
+    <section id="insight-selection">
+        <h2>選擇洞察重點</h2>
+        <div id="insight-list">
+            <button data-insight="attraction">這件事情有沒有吸引力？</button>
+            <button data-insight="ability">民眾有能力直接去執行這個行為嗎？</button>
+            <button data-insight="natural-cue">有創造線索讓新行為自然發生嗎？</button>
+            <button data-insight="choice">有創造選項讓民眾自然選擇是民眾希望的選項嗎？</button>
+            <button data-insight="competition">有創造適當的競爭嗎？</button>
+            <button data-insight="conformity">有讓人們感覺到應該跟著流行嗎？</button>
+            <button data-insight="social-recognition">新行為是否有被社會肯定的感覺？</button>
+            <button data-insight="reciprocity">有讓民眾覺得被關心，有虧欠感嗎？</button>
+            <button data-insight="urgency">有創造時間的緊迫，加快選擇嗎？</button>
+            <button data-insight="commitment">有創造承諾的逐步機制讓民眾願意嗎？</button>
+            <button data-insight="respect">民眾從事這個行為是否被肯定，被社會尊重？</button>
+            <button data-insight="value">是否有強調這個行為或產品的價值並加以具象化？</button>
+            <button data-insight="loss-aversion">是否有具體的讓民眾感覺到不採取新行為的損失？</button>
+            <button data-insight="enjoyment">是否讓民眾覺得參與這個活動帶來快樂與新奇？</button>
+        </div>
+    </section>
+
+    <section id="psychological-driver" style="display: none;">
+        <p><strong>心理驅力：</strong><span id="driver-text"></span></p>
+        <button id="confirm-driver-btn">確認心理驅力</button>
+    </section>
+
+    <section id="strategy-suggestion" style="display: none;">
+        <h2>策略建議</h2>
+        <p id="strategy-text"></p>
+        <h3>應用範例</h3>
+        <div id="examples">
+            <p><strong>教養小孩：</strong><span id="example-parenting"></span></p>
+            <p><strong>商業行銷：</strong><span id="example-marketing"></span></p>
+            <p><strong>推動公眾事務：</strong><span id="example-public"></span></p>
+        </div>
+        <button id="reset-btn">重新選擇洞察重點</button>
+    </section>
+
+    <footer>
+        <p>聯絡我們：<a href="mailto:health100@gmail.com">health100@gmail.com</a></p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
